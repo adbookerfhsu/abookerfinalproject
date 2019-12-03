@@ -1,0 +1,77 @@
+<!Doctype html>
+
+<html>
+
+	<head>
+		<!-- Amy Booker
+			 INF651 Web Dev I
+			 FHSU - Prof David Gray
+			 Final Project -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
+		<title>Santa's To-Do List</title>
+		<link href="foundation.css" rel="stylesheet">
+		<link href="santas.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Delius|Delius+Swash+Caps|Delius+Unicase&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="header-bar">
+			<div class="grid-x grid-padding-x">
+				<div class="logo small-12 large-12">
+					<p class="print">Santa's To-Do List</p>
+					<img src="images/santababysantahohoho.png" alt="Santa Sing HO HO HO" class="santa" />
+				</div>
+			</div>
+			<div class="countClock">
+				<div class="grid-x">
+					<div class="small-4 large-4" >
+					<img src="images/treedecorated.png" alt="Decorated Tree" id="santaTree"/>
+					</div>
+					<div class="small-4 large-4" id="clockDiv">
+						<p id="days">Shopping Days til Christmas</p>
+						<p id="clock"></p>
+					</div>
+					<div class="small-4 large-4">
+					<img src="images/peppermintpatty2.png" alt="Elf Girl with Gifts" id="elfGift" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-body">
+			<div class="grid-x grid-padding-x">
+				<div class="listContain small-12 large-12 cell" id="borderDiv">
+					<div class="listBox">
+						<p id="instruct">Greeting from the North Pole!! Welcome to Santa's To Do List. The Elves created this site to keep you organized by allowing you to create your very own to do list. You can add, delete or change any item on the list using the Add to list button. The Print button at the right will allow you to print your to do list. Thank you for visiting our site and we wish you a very Merry Christmas.</p>
+						<p id="santasign">Santa and the Elves! </p>
+						<input type="text" id="userInput" placeholder="Enter you next task here...">
+						<div class="buttons small-12 large=12">
+							<button onclick="newElement()" class="addBtn">
+							<img src="images/joychristmaslightred.png" alt="red christmas light" id="redLight" />
+							Add to List
+							<img src="images/joychristmaslightgreen.png" alt="green christmas light" id="greenLight" />
+							</button>
+							<button onclick="printButton('theList')" class="printBtn">
+							<img src="images/joychristmaslightred.png" alt="red christmas light" id="redLight" />
+							Print List
+							<img src="images/joychristmaslightgreen.png" alt="green christmas light" id="greenLight" />
+							</button>
+						</div>
+					</div>
+					<ul class="print" id="theList">
+						<li class="checked">Pay bills</li>
+						<li>Go Shopping</li>
+						<li>Buy wrapping paper</li>
+						<li>Plan meals</li>
+						<li>Buy groceries</li>
+						<li>Bake Cookies</li>
+						<li>Finish craft gifts</li>
+						<li>Wrap Present</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	<script src="santas.js"></script>
+	<footer><p id="myFooter">Copyright 2019. All rights reserved. Created for a final project in FHSU INF651. <a href="mailto:fakename@fakeemail.com?Subject=Final%20Project%20Website">Click here for help.</a></p>
+	</footer>
+	</body>
+</html>

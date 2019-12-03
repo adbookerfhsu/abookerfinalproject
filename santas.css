@@ -1,0 +1,261 @@
+/*  Amy Booker
+	 INF651 Web Dev I
+	 FHSU - Prof David Gray
+	 Final Project */
+
+	 
+/* ---- body styles ----*/
+/* Color dark green = #39550a
+	dark red = #8a0006
+	pink = #c4db53
+	red = #bd2f30 
+	light green = #febfd0
+  */
+body {
+    background: #fde7cc;
+	font-family: 'Delius', cursive;
+	font-size: 1.5vw;
+	color: #39550a;
+}
+
+/*---- header bar styles ---- */
+
+.logo p {
+	font-size: 4vw;
+	font-family: 'Delius Swash Caps', cursive;
+	color: #8a0006;
+	text-align: center;
+	padding: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:none;
+	width: 50%;
+	}
+	
+/* Santa img */
+.santa {
+	display: block;
+	margin-top: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	}
+/* Countdown clock div */	
+#clockDiv {
+	background-color: #8a0006;
+	color: white;
+	font-family: 'Delius Swash Caps', cursive;
+	font-size: 2vw;
+	font-weight: bold;
+	text-align: center;
+	padding-top:5px;
+}
+/* corrects padding top of text */
+#days{
+	display: block;
+	text-align: center;
+	padding-top: 2%;
+}
+
+
+#santaTree {
+	display: block;
+	margin: auto;
+	width: 20%;
+	margin-bottom: 1%;
+}
+
+#elfGift {
+	display: block;
+	margin: auto;
+	width: 21%;
+}
+
+
+/* ---- main body div --- */
+
+#borderDiv {
+	border: 10px solid #8a0006;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Styles the instructions */
+#instruct {
+	padding: 5px 5px 0 5px;
+	text-align: justify;
+}
+
+/*Styles for Santa Signature */
+#santasign {
+	font-family: 'Delius Swash Caps', cursive;
+	text-align: right;
+	font-size: 2.5vw;
+	padding:none;
+	margin-top: 0;
+
+	
+}
+
+/* Controls the width of the List */
+.listContain {
+	max-width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+/* Changes to the input box */
+input::placeholder {
+	color: #bd2f30;
+	font-size: .75vw;
+}
+
+/* Sizes the lights inside the button tags */
+#redLight, #greenLight {
+	width: 3%;
+}
+
+
+/* Styles the list */
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* Styling the list items */
+ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #febfd0;
+	transition: 0.2s;
+	list-style-type: none;
+
+  /* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Changes odd lines to pink */
+ul li:nth-child(odd) {
+	background: #c4db53;
+}
+
+/* Set hover animations */
+ul li:hover {
+	background: #8a0006;
+	color: white;
+}
+
+/* onClick changes */
+ul li.checked {
+	background: #629405;
+	color: #fff;
+	text-decoration: line-through;
+	text-decoration-color: #39550a;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 3px 3px 0;
+	top: 16px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 1.2vw;
+	width: .5vw;
+}
+
+
+/* Style the close button */
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+	background-color: #8a0006;
+	color: white;
+}
+
+/* Style the instruct box */
+.listBox {
+	background-color: #264c00;
+	padding: 30px 40px;
+	color: white;
+	text-align: center;
+}
+
+/* Clear floats after instruct box */
+.listBox:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Style the input */
+input {
+	margin: 0;
+    border: none;
+	border-radius: 0;
+	width: 75%;
+	padding: 10px;
+	float: left;
+ }
+
+
+/* Add to List Button */
+.addBtn {
+	margin: 1%;
+	padding: 1%;
+	width:48%;
+	background: #fdc6d4;
+	float: left;
+	text-align: center;
+	font-size: 1.5vw;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+}
+
+.addBtn:hover {
+	background-color: #8a0006;
+	color: white;
+}
+
+/*Print List button */
+.printBtn {
+	margin: 1%;
+	padding: 1%;
+	width:48%;
+	background: #fdc6d4;
+	float: left;
+	text-align: center;
+	font-size: 1.5vw;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+}
+
+.printBtn:hover {
+	background-color: #8a0006;
+	color: white;
+}
+
+#myFooter {
+	padding: 2%;
+	text-align: center;
+	font-size: 1vw;
+}
+
+@media print {
+	li.checked {
+		display: none;}
+}
+	
