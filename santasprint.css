@@ -1,8 +1,12 @@
-body {
-	visibility: hidden;
+header, footer, img, p {
+	display: none;
 }
 
 
 .print {
-	visibility: visible;
+	display: block;
+	font-size: 12px;
+	color: black;
 }
+
+
